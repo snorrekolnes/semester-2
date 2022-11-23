@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+  </head>
+  <body>
+    <header class="">
+      <nav class="bg-white border-none px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+        <div
+          class="container flex flex-wrap justify-between items-center mx-auto"
+        >
+          <span
+            class="self-center text-xl font-[poppins] font-semibold whitespace-nowrap text-PINK"
+            >P I N K</span
+          >
+
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              data-collapse-toggle="navbar-search"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+              class="md:hidden text-PINK dark:text-PINK hover:bg-PINK dark:hover:bg-PINK focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+            >
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="sr-only">Search</span>
+            </button>
+            <div class="hidden relative md:block">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-PINK-BLACK"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="sr-only">Search icon</span>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block p-2 pl-10 w-44 text-PINK-BLACK bg-PINK rounded-lg border border-none sm:text-sm focus:ring-PINK focus:border-PINK dark:bg-PINK-BLACK dark:border-PINK-BLACK dark:placeholder-PINK-BLACK dark:text-PINK-BLACK dark:focus:ring-PINK dark:focus:border-PINK"
+                placeholder="Search In PINK..."
+              />
+            </div>
+            <button
+              data-collapse-toggle="navbar-search"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-PINK-BLACK rounded-lg md:hidden hover:bg-PINK focus:outline-none focus:ring-2 focus:ring-PINK dark:text-PINK-BLACK dark:hover:bg-PINK dark:focus:ring-PINK-BLACK"
+              aria-controls="navbar-search"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+            id="navbar-search"
+          >
+            <div class="relative mt-3 md:hidden">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-PINK-BLACK"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="search-navbar"
+                class="block p-2 pl-10 w-full text-PINK-BLACK bg-PINK rounded-lg border border-PINK sm:text-sm focus:ring-PINK focus:border-PINK dark:bg-gray-700 dark:border-gray-600 dark:placeholder-PINK-BLACK dark:text-PINK-BLACK dark:focus:ring-PINK dark:focus:border-PINK"
+                placeholder="Search In PINK..."
+              />
+            </div>
+            <ul
+              class="flex flex-col justify-self-center ml-20 p-4 mr-0 mt-4 bg-white rounded-lg border border-PINK-BLACK md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="login.html"
+                  class="block py-2 pr-4 pl-3 text-white bg-PINK rounded md:bg-transparent md:text-PINK md:p-0 dark:text-white"
+                  aria-current="page"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  href="profile.html"
+                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-PINK md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="h-full grid-cols-3 bg-PINK-BLACK">
+      <div class="flex flex-row">
+        <div class="basis-1/4 sticky top-0 hidden lg:flex">
+          <aside class="desktop:w-72 fixed laptop:w-56" aria-label="Sidebar">
+            <div
+              class="overflow-y-auto static py-4 px-3 bg-transparent rounded dark:bg-gray-800"
+            >
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-6 h-6 text-PINK transition duration-75 dark:text-PINK group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                      <path
+                        d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"
+                      ></path>
+                    </svg>
+                    <span class="ml-3">Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-6 h-6 text-PINK transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                      ></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
+                    <span
+                      class="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-PINK bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300"
+                      >Pro</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-6 h-6 text-PINK transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"
+                      ></path>
+                      <path
+                        d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
+                      ></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
+                    <span
+                      class="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200"
+                      >3</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-6 h-6 text-PINK transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Users</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-6 h-6 text-PINK transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-6 h-6 text-PINK transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-6 h-6 text-PINK transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
+                  </a>
+                </li>
+              </ul>
+              <ul
+                class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-5 h-5 text-PINK transition duration-75 group-hover:text-gray-900 dark:group-hover:text-white dark:text-gray-400"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="gem"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M378.7 32H133.3L256 182.7L378.7 32zM512 192l-107.4-141.3L289.6 192H512zM107.4 50.67L0 192h222.4L107.4 50.67zM244.3 474.9C247.3 478.2 251.6 480 256 480s8.653-1.828 11.67-5.062L510.6 224H1.365L244.3 474.9z"
+                      ></path>
+                    </svg>
+                    <span class="ml-4">Upgrade to Pro</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-6 h-6 text-PINK transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="ml-3">Documentation</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-6 h-6 text-PINK transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"
+                      ></path>
+                    </svg>
+                    <span class="ml-3">Components</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center p-2 text-base font-normal text-PINK rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="flex-shrink-0 w-6 h-6 text-PINK transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                    <span class="ml-3">Help</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="basis-full lg:basis-1/2">
+          <form class="w-full h-full">
+            <div class="flex flex-col items-center border-b border-PINK py-2">
+              <img
+                class="object-cover h-24 w-24 rounded-full mt-5"
+                src="./img/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg"
+                alt=""
+                srcset=""
+              />
+
+              <input
+                class="appearance-none bg-transparent text-center mb-20 border-none w-full text-PINK mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text"
+                placeholder="Whats On Your Mind?"
+                aria-label="Full name"
+              />
+              <div class="flex-row">
+                <button
+                  class="flex-shrink-0 flex-row bg-PINK hover:bg-PINK border-PINK hover:border-teal-700 text-sm border-4 text-PINK-BLACK white py-1 px-2 rounded"
+                  type="button"
+                >
+                  Post
+                </button>
+                <button
+                  class="flex-shrink-0 border-transparent border-4 text-PINK hover:text-PINK text-sm py-1 px-2 rounded"
+                  type="button"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+            <div class="inline-block flex-none ml-10 mt-5">
+              <img
+                class="w-10 h-10 rounded-full mr-4"
+                src="./img/erik-lucatero-d2MSDujJl2g-unsplash.jpg"
+                alt="Avatar of john"
+              />
+              <div class="text-sm">
+                <p class="text-white leading-none">John Johnson</p>
+                <p class="text-white">Aug 20</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center rounded overflow-hidden shadow-lg"
+            >
+              <img
+                class="object-cover justify-center h-32 w-60 rounded-sm mt-5"
+                src="./img/mak-RlxP6WGmfP0-unsplash.jpg"
+                alt="Flowers"
+              />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl text-PINK text-center mb-2">
+                  The Coldest Sunset
+                </div>
+                <p class="text-gray-400 text-center text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >#photography</span
+                >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >#travel</span
+                >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >#winter</span
+                >
+              </div>
+            </div>
+            <div class="inline-block flex-none ml-10 mt-5">
+              <img
+                class="w-10 h-10 rounded-full mr-4"
+                src="./img/lucas-gouvea-aoEwuEH7YAs-unsplash.jpg"
+                alt="Avatar of Lucas"
+              />
+              <div class="text-sm">
+                <p class="text-white leading-none">Mike Snow</p>
+                <p class="text-white">Aug 19</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center rounded overflow-hidden shadow-lg"
+            >
+              <img
+                class="object-cover justify-center h-32 w-60 rounded-sm mt-5"
+                src="./img/resource-database-4swp-1rj_XI-unsplash.jpg"
+                alt="Dots"
+              />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl text-PINK text-center mb-2">
+                  Museum Vibes
+                </div>
+                <p class="text-gray-400 text-center text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >#photography</span
+                >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >#museum</span
+                >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >#art</span
+                >
+              </div>
+            </div>
+            <div class="inline-block flex-none ml-10 mt-5">
+              <img
+                class="w-10 h-10 rounded-full mr-4"
+                src="./img/reza-biazar-eSjmZW97cH8-unsplash (1).jpg"
+                alt="Avatar of Lucas"
+              />
+              <div class="text-sm">
+                <p class="text-white leading-none">Lucas Seian</p>
+                <p class="text-white">Aug 18</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center rounded overflow-hidden shadow-lg"
+            >
+              <img
+                class="object-cover justify-center h-32 w-60 rounded-sm mt-5"
+                src="./img/xavier-photography-ONJUbWBktVI-unsplash.jpg"
+                alt="Stairs"
+              />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl text-PINK text-center mb-2">
+                  Stairway
+                </div>
+                <p class="text-gray-400 text-center text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >#heigth</span
+                >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >#walk</span
+                >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >#photo</span
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="basis-1/4 sticky top-0 hidden lg:flex">
+          <aside class="desktop:w-72 fixed laptop:w-56" aria-label="Sidebar">
+            <div
+              class="overflow-y-auto flex flex-col items-center static py-4 px-3 bg-transparent rounded dark:bg-gray-800"
+            >
+              <div class="flex flex-col">
+                <h1 class="text-PINK">YOUR PAGES</h1>
+                <div class="flex flex-row items-center mt-5">
+                  <img
+                    class="w-10 h-10 rounded-full mr-4"
+                    src="./img/music.jpg"
+                    alt="music"
+                  />
+                  <h2 class="text-PINK">Music</h2>
+                </div>
+                <div class="flex flex-row items-center mt-5">
+                  <img
+                    class="w-10 h-10 rounded-full mr-4"
+                    src="./img/sport.jpg"
+                    alt="sport"
+                  />
+                  <h2 class="text-PINK">Sports</h2>
+                </div>
+                <div class="flex flex-row items-center mt-5">
+                  <img
+                    class="w-10 h-10 rounded-full mr-4"
+                    src="./img/movies.jpg"
+                    alt="movie"
+                  />
+                  <h2 class="text-PINK">Movies</h2>
+                </div>
+                <div class="">
+                  <h1 class="text-PINK mt-10">CONTACTS</h1>
+                  <h5 class="text-gray-700 mt-2">Active</h5>
+                  <div class="flex flex-row items-center mt-5">
+                    <img
+                      class="w-10 h-10 rounded-full mr-4"
+                      src="./img/lucas-gouvea-aoEwuEH7YAs-unsplash.jpg"
+                      alt="mike"
+                    />
+                    <h2 class="text-PINK">Mike Snow</h2>
+                  </div>
+                  <div class="flex flex-row items-center mt-5">
+                    <img
+                      class="w-10 h-10 rounded-full mr-4"
+                      src="./img/reza-biazar-eSjmZW97cH8-unsplash (1).jpg"
+                      alt="lucas"
+                    />
+                    <h2 class="text-PINK">Lucas Seian</h2>
+                  </div>
+                  <div class="flex flex-row items-center mt-5">
+                    <img
+                      class="w-10 h-10 rounded-full mr-4"
+                      src="./img/erik-lucatero-d2MSDujJl2g-unsplash.jpg"
+                      alt="John"
+                    />
+                    <h2 class="text-PINK">John Johnson</h2>
+                  </div>
+                  <div class="flex flex-row items-center mt-5">
+                    <img
+                      class="w-10 h-10 rounded-full mr-4"
+                      src="./img/girl-1.jpg"
+                      alt="Jenny"
+                    />
+                    <h2 class="text-PINK">Jenny Jesnon</h2>
+                  </div>
+                  <div class="flex flex-row items-center mt-5">
+                    <img
+                      class="w-10 h-10 rounded-full mr-4"
+                      src="./img/girl-2.jpg"
+                      alt="susan"
+                    />
+                    <h2 class="text-PINK">Susan Brei</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<script type="module" src="./js/main.js"></script>
