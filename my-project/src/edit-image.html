@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="module" src="./js/editPicture.js"></script>
+    <script type="module" src="./js/main.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/cae421ab12.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@336;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-SWIMMER-BLACK">
+    <form id="edit-form" class="">
+      <div class="flex items-center flex-col">
+        <h2
+          class="take-a-look font-Josefin text-sm mt-10 text-white text-center"
+        >
+          Enter a valid picture URL
+        </h2>
+        <input id="pic-url" type="url" class="mt-20" />
+        <button
+          id="bid-button"
+          class="justify-center inline-flex bg-transparent items-center m-auto w-40 rounded-md border border-main-text mt-6 px-2 py-2 text-sm font-Josefin text-white shadow-sm"
+          type="submit"
+        >
+          Update picture
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

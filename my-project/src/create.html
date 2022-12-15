@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/createListing.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/cae421ab12.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@336;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-SWIMMER-BLACK">
+    <header>
+      <nav
+        class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-full z-10 top-0"
+      >
+        <a href="homepage.html">
+          <img src="./img/SWIMMER LOGO1.svg" alt="" srcset="" />
+        </a>
+        <div class="flex text-center flex-shrink-0 text-SWIMMER-BLACK mr-6">
+          <a
+            class="text-SWIMMER-BLACK font-Josefin no-underline hover:text-white hover:no-underline"
+            href="#"
+          >
+            <h1 class="pl-2 text-center justify-center">SWIMMER</h1>
+          </a>
+        </div>
+        <h2
+          class="text-SWIMMER-PINK text-center m-auto justify-center tablet:flex hidden font-Indie text-xs"
+        >
+          “Don`t just surf on the internet, go for a swim”
+        </h2>
+
+        <div class="block lg:hidden">
+          <button
+            id="nav-toggle"
+            class="flex items-center px-3 py-2 border rounded text-SWIMMER-BLACK border-SWIMMER-BLACK hover:text-SWIMMER-PINK hover:border-SWIMMER-PINK"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a
+                id="create-btn"
+                class="inline-block text-SWIMMER-BLACK font-Indie no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="#"
+                >Create a listing</a
+              >
+            </li>
+            <li id="credits-show" class="mr-3"></li>
+            <li class="mr-3">
+              <a
+                id="logout-btn"
+                class="inline-block text-SWIMMER-BLACK no-underline font-Indie hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="#"
+                >Logout</a
+              >
+            </li>
+            <li id="profile-btn" class="ml-3 laptop:ml-0">
+              <img src="./img/swimmer-profile-main.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="flex flex-col mt-32">
+      <div class="create-container flex flex-col">
+        <h2
+          class="take-a-look font-Josefin text-sm mt-10 text-white text-center"
+        >
+          Create a listing!
+        </h2>
+        <form
+          id="create-listing"
+          class="flex flex-col w-72 gap-y-2 p-8 m-8 mx-auto lMobile:w-96 text-left"
+        >
+          <label for="postTitle" class="text-SWIMMER-PINK font-Josefin"
+            >Title:
+          </label>
+          <input
+            id="title"
+            class="p-2 rounded-md text-sm font-Indie"
+            name="postTitle"
+            type="text"
+            placeholder="Your Title"
+          />
+          <span id="title-error" class="hidden text-sm text-red-200">
+            Title is required
+          </span>
+          <label
+            for="postMessage"
+            class="text-SWIMMER-PINK text-sm font-Josefin"
+            >Description: (optional)
+          </label>
+          <textarea
+            rows="3"
+            name="listingDescription"
+            id="post-description"
+            class="block w-full h-40 resize-none border-0 placeholder-gray-400 focus:ring-0 sm:text-sm p-2 rounded-md font-Indie"
+            placeholder="Description "
+          ></textarea>
+          <h2
+            class="take-a-look font-Josefin text-sm mt-10 text-white text-center"
+          >
+            Add media with a valid image URL
+          </h2>
+          <h2
+            class="take-a-look font-Josefin text-xs mt-2 text-white text-center"
+          >
+            (The URL must consist of fully formed links)
+          </h2>
+          <div
+            class="media-post flex justify-between flex-row w-full items-center text-center"
+          >
+            <input
+              class="h-10 w-20 rounded-md font-Indie text-center"
+              type="url"
+              name="media"
+              id="media-post"
+              placeholder="URL"
+            />
+            <input
+              class="h-10 w-20 rounded-md font-Indie text-center"
+              type="url"
+              name="media"
+              id="media-post"
+              placeholder="URL"
+            />
+            <input
+              class="h-10 w-20 rounded-md font-Indie text-center"
+              type="url"
+              name="media"
+              id="media-post"
+              placeholder="URL"
+            />
+          </div>
+          <h2
+            class="take-a-look font-Josefin text-sm mt-10 text-white text-center"
+          >
+            Choose when this listing ends
+          </h2>
+          <h2
+            class="take-a-look font-Josefin text-xs mt-2 text-white text-center"
+          >
+            (Required)
+          </h2>
+          <input
+            id="date-and-time"
+            class="rounded-md font-Indie h-10"
+            type="datetime-local"
+          />
+          <span id="time-error" class="hidden text-sm text-red-200">
+            Time is required
+          </span>
+          <button
+            class="justify-center inline-flex bg-[url('../img/swimmer-texture-1.svg')] items-center m-auto w-40 rounded-md border border-main-text mt-6 px-4 py-4 text-sm font-Josefin text-white shadow-sm"
+            type="submit"
+          >
+            Create Post
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+
+    <!---
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const overlay = document.querySelector('#overlay');
+        const openModal = document.querySelector('#modal');
+
+        openModal.addEventListener('click', () => {
+          overlay.classList.remove('hidden');
+          overlay.classList.add('flex');
+        });
+      });
+    </script>
+    <script>
+      const box = document.querySelector('.b');
+
+      document.addEventListener('click', function (event) {
+        if (event.target.closest('.b')) return box.classList.add('hidden');
+      });
+        <div id="nav-bar" class="flex text-sm bg-blue-100"></div>
+    </script>-->
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/listingById.js"></script>
+    <script type="module" src="./js/getBidById.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/cae421ab12.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@336;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-SWIMMER-BLACK">
+    <header>
+      <nav
+        class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-full z-10 top-0"
+      >
+        <a href="homepage.html">
+          <img src="./img/SWIMMER LOGO1.svg" alt="" srcset="" />
+        </a>
+        <div class="flex text-center flex-shrink-0 text-SWIMMER-BLACK mr-6">
+          <a
+            class="text-SWIMMER-BLACK font-Josefin no-underline hover:text-white hover:no-underline"
+            href="#"
+          >
+            <h1 class="pl-2 text-center justify-center">SWIMMER</h1>
+          </a>
+        </div>
+        <h2
+          class="text-SWIMMER-PINK text-center m-auto justify-center tablet:flex hidden font-Indie text-xs"
+        >
+          “Don`t just surf on the internet, go for a swim”
+        </h2>
+
+        <div class="block lg:hidden">
+          <button
+            id="nav-toggle"
+            class="flex items-center px-3 py-2 border rounded text-SWIMMER-BLACK border-SWIMMER-BLACK hover:text-SWIMMER-PINK hover:border-SWIMMER-PINK"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a
+                id="create-btn"
+                class="inline-block text-SWIMMER-BLACK font-Indie no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="./create.html"
+                >Create a listing</a
+              >
+            </li>
+            <li id="credits-show" class="mr-3"></li>
+            <li class="mr-3">
+              <a
+                id="logout-btn"
+                class="inline-block text-SWIMMER-BLACK no-underline font-Indie hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="#"
+                >Logout</a
+              >
+            </li>
+            <li id="profile-btn" class="ml-3 laptop:ml-0">
+              <img src="./img/swimmer-profile-main.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="flex flex-col mt-12">
+      <section id="header-for-main"></section>
+      <div id="single-post" class="single-container m-auto mt-24"></div>
+      <div class="timer-and-bids flex flex-col items-center mt-4">
+        <h1 class="comeon text-SWIMMER-PINK font-Josefin">Make a bid below!</h1>
+        <h3 class="expire text-white font-Josefin">Time left:</h3>
+        <p id="demo" class="text-white font-Josefin"></p>
+        <h3 id="current-amount" class="current text-white font-Indie mt-8"></h3>
+        <div class="make-bid">
+          <form
+            id="bid-form"
+            class="flex flex-row gap-y-2 p-8 mx-auto w-80 lMobile:w-96 text-left"
+          >
+            <div class="amount flex flex-col">
+              <label for="Amount" class="text-SWIMMER-PINK font-Josefin"
+                >Type in amount</label
+              >
+              <input
+                id="amount"
+                class="p-2 rounded-md"
+                name="postTitle"
+                type="number"
+                placeholder="$"
+              />
+            </div>
+            <button
+              id="bid-button"
+              class="justify-center ml-2 inline-flex bg-transparent items-center m-auto w-40 rounded-md border border-main-text mt-6 px-2 py-2 text-sm font-Josefin text-white shadow-sm"
+              type="submit"
+            >
+              Place bid
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <!---
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const overlay = document.querySelector('#overlay');
+        const openModal = document.querySelector('#modal');
+
+        openModal.addEventListener('click', () => {
+          overlay.classList.remove('hidden');
+          overlay.classList.add('flex');
+        });
+      });
+    </script>
+    <script>
+      const box = document.querySelector('.b');
+
+      document.addEventListener('click', function (event) {
+        if (event.target.closest('.b')) return box.classList.add('hidden');
+      });
+        <div id="nav-bar" class="flex text-sm bg-blue-100"></div>
+    </script>-->
+  </body>
+</html>

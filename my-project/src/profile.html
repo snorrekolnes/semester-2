@@ -5,343 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
-    <header class="">
-      <nav class="bg-white border-none px-2 sm:px-4 py-2.5 dark:bg-gray-900">
-        <div
-          class="container flex flex-wrap justify-between items-center mx-auto"
-        >
-          <a href="index.html">
-            <span
-              class="self-center text-xl font-[poppins] font-semibold whitespace-nowrap text-PINK"
-              >P I N K</span
-            ></a
-          >
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/profile.js"></script>
 
-          <div class="flex md:order-2">
-            <button
-              type="button"
-              data-collapse-toggle="navbar-search"
-              aria-controls="navbar-search"
-              aria-expanded="false"
-              class="md:hidden text-PINK dark:text-PINK hover:bg-PINK dark:hover:bg-PINK focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
-            >
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="sr-only">Search</span>
-            </button>
-            <div class="hidden relative md:block">
-              <div
-                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  class="w-5 h-5 text-PINK-BLACK"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="sr-only">Search icon</span>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                class="block p-2 pl-10 w-44 text-PINK-BLACK bg-PINK rounded-lg border border-none sm:text-sm focus:ring-PINK focus:border-PINK dark:bg-PINK-BLACK dark:border-PINK-BLACK dark:placeholder-PINK-BLACK dark:text-PINK-BLACK dark:focus:ring-PINK dark:focus:border-PINK"
-                placeholder="Search In PINK..."
-              />
-            </div>
-            <button
-              data-collapse-toggle="navbar-search"
-              type="button"
-              class="inline-flex items-center p-2 text-sm text-PINK-BLACK rounded-lg md:hidden hover:bg-PINK focus:outline-none focus:ring-2 focus:ring-PINK dark:text-PINK-BLACK dark:hover:bg-PINK dark:focus:ring-PINK-BLACK"
-              aria-controls="navbar-search"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div
-            class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
-            id="navbar-search"
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/cae421ab12.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@336;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-SWIMMER-BLACK">
+    <header>
+      <nav
+        class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-full z-10 top-0"
+      >
+        <a href="homepage.html">
+          <img src="./img/SWIMMER LOGO1.svg" alt="" srcset=""
+        /></a>
+        <div class="flex text-center flex-shrink-0 text-SWIMMER-BLACK mr-6">
+          <a
+            class="text-SWIMMER-BLACK font-Josefin no-underline hover:text-white hover:no-underline"
+            href="#"
           >
-            <div class="relative mt-3 md:hidden">
-              <div
-                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-              >
-                <svg
-                  class="w-5 h-5 text-PINK-BLACK"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                class="block p-2 pl-10 w-full text-PINK-BLACK bg-PINK rounded-lg border border-PINK sm:text-sm focus:ring-PINK focus:border-PINK dark:bg-gray-700 dark:border-gray-600 dark:placeholder-PINK-BLACK dark:text-PINK-BLACK dark:focus:ring-PINK dark:focus:border-PINK"
-                placeholder="Search In PINK..."
-              />
-            </div>
-            <ul
-              class="flex flex-col justify-self-center ml-20 p-4 mr-0 mt-4 bg-white rounded-lg border border-PINK-BLACK md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            <h1 class="pl-2 text-center justify-center">SWIMMER</h1>
+          </a>
+        </div>
+        <h2
+          class="text-SWIMMER-PINK text-center m-auto justify-center tablet:flex hidden font-Indie text-xs"
+        >
+          “Don`t just surf on the internet, go for a swim”
+        </h2>
+
+        <div class="block lg:hidden">
+          <button
+            id="nav-toggle"
+            class="flex items-center px-3 py-2 border rounded text-SWIMMER-BLACK border-SWIMMER-BLACK hover:text-SWIMMER-PINK hover:border-SWIMMER-PINK"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <li>
-                <a
-                  href="login.html"
-                  class="block py-2 pr-4 pl-3 text-white bg-PINK rounded md:bg-transparent md:text-PINK md:p-0 dark:text-white"
-                  aria-current="page"
-                  >Login</a
-                >
-              </li>
-              <li>
-                <a
-                  href="profile.html"
-                  class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-PINK md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Profile</a
-                >
-              </li>
-            </ul>
-          </div>
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="w-full flex-grow lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a
+                id="create-btn"
+                class="inline-block text-SWIMMER-BLACK font-Indie no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="./create.html"
+                >Create a listing</a
+              >
+            </li>
+            <li id="credits-show" class="mr-3"></li>
+            <li class="mr-3">
+              <a
+                id="logout-btn"
+                class="inline-block text-SWIMMER-BLACK no-underline font-Indie hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="#"
+                >Logout</a
+              >
+            </li>
+            <li id="profile-btn" class="ml-3 laptop:ml-0">
+              <img src="./img/swimmer-profile-main.svg" alt="" />
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
-
-    <div class="basis-1/4 sticky top-0 hidden lg:flex">
-      <aside
-        class="desktop:w-72 fixed items-center laptop:w-56"
-        aria-label="Sidebar"
-      >
-        <div class="flex flex-col items-center py-2">
-          <input
-            class="appearance-none bg-transparent text-center mb-20 border-none w-full text-PINK mr-3 py-1 px-2 leading-tight focus:outline-none"
-            type="text"
-            placeholder="Whats On Your Mind?"
-            aria-label="Full name"
-          />
-          <div class="flex-row">
-            <button
-              class="flex-shrink-0 flex-row bg-PINK hover:bg-PINK border-PINK hover:border-teal-700 text-sm border-4 text-PINK-BLACK white py-1 px-2 rounded"
-              type="button"
-            >
-              Post
-            </button>
-            <button
-              class="flex-shrink-0 border-transparent border-4 text-PINK hover:text-PINK text-sm py-1 px-2 rounded"
-              type="button"
-            >
-              Cancel
-            </button>
-          </div>
-        </div>
-      </aside>
-    </div>
-
-    <section class="pt-16 bg-PINK-BLACK basis-full lg:basis-1/2">
-      <div class="basis-full lg:basis-1/2 px-4 mx-auto">
+    <main class="flex flex-col mt-32 relative">
+      <div id="profile-main" class="profile-page flex flex-col items-center">
         <div
-          class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-xl rounded-lg mt-16"
+          id="the-box"
+          class="box-border bg-SWIMMER-BLACK relative h-96 m-auto w-72 flex flex-wrap flex-col tablet:w-72 items-center text-center p-4 overflow-hidden border-4 mt-2"
         >
-          <div class="px-6">
-            <div class="flex flex-wrap justify-center">
-              <div class="w-full px-4 flex justify-center pb-10">
-                <div
-                  class="h-30 align-middle border-none absolute bg-transparent -m-16 -ml-20 lg:-ml-16 w-40"
-                >
-                  <img
-                    alt="girl"
-                    src="./img/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg"
-                    class="rounded-full bg-transparent h-30"
-                  />
-                </div>
-              </div>
-              <div class="w-full px-4 text-center mt-20">
-                <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                  <div class="mr-4 p-3 text-center">
-                    <span
-                      class="text-xl font-bold block uppercase tracking-wide text-PINK"
-                    >
-                      22
-                    </span>
-                    <span class="text-sm text-PINK">Friends</span>
-                  </div>
-                  <div class="mr-4 p-3 text-center">
-                    <span
-                      class="text-xl font-bold block uppercase tracking-wide text-PINK"
-                    >
-                      10
-                    </span>
-                    <span class="text-sm text-PINK">Photos</span>
-                  </div>
-                  <div class="lg:mr-4 p-3 text-center">
-                    <span
-                      class="text-xl font-bold block uppercase tracking-wide text-PINK"
-                    >
-                      89
-                    </span>
-                    <span class="text-sm text-PINK">Comments</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center mt-12">
-              <h3 class="text-xl font-semibold leading-normal text-PINK mb-2">
-                Britney Stairs
-              </h3>
-              <div
-                class="text-sm leading-normal mt-0 mb-2 text-PINK font-bold uppercase"
-              >
-                <i class="fas fa-map-marker-alt mr-2 text-lg text-PINK"></i>
-                Los Angeles, California
-              </div>
-              <div class="mb-2 text-PINK mt-10">
-                <i class="fas fa-briefcase mr-2 text-lg text-PINK"></i>
-                Solution Manager - Creative Tim Officer
-              </div>
-              <div class="mb-2 text-PINK">
-                <i class="fas fa-university mr-2 text-lg text-PINK"></i>
-                University of Computer Science
-              </div>
-            </div>
-            <div class="mt-10 py-10 border-t border-PINK-BLUE text-center">
-              <div class="flex flex-wrap justify-center">
-                <div class="w-full lg:w-9/12 px-4">
-                  <p class="mb-4 text-lg leading-relaxed text-PINK">
-                    An artist of considerable range, Jenna the name taken by
-                    Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                    performs and records all of his own music, giving it a warm,
-                    intimate feel with a solid groove structure. An artist of
-                    considerable range.
-                  </p>
-                  <a
-                    href="javascript:void(0);"
-                    class="font-normal text-PINK-BLUE"
-                  >
-                    Show more
-                  </a>
-                </div>
-              </div>
-            </div>
+          <h1 id="user-name" class="text-white font-Josefin mb--20"></h1>
+          <div
+            id="user-avatar"
+            class="user-avatar flex items-center m-auto justify-center mt-2 mb-2"
+          ></div>
+          <a href="edit-image.html">
+            <h1
+              id="edit-avatar"
+              class="font-Indie text-sm mb-8 text-white underline"
+            >
+              Edit profile picture
+            </h1></a
+          >
+          <h1
+            id="edit-avatar"
+            class="font-Indie text-sm mb-2 text-white underline"
+          >
+            Email:
+          </h1>
+          <h1 id="email" class="text-white font-Josefin"></h1>
+          <div class="user-info flex flex-row mt-8">
+            <div id="user-credits"></div>
+            <div id="user-wins"></div>
+          </div>
+          <div class="listings mt-4">
+            <div id="listing-container" class="listing-container"></div>
           </div>
         </div>
       </div>
-    </section>
-    <div class="basis-1/4 sticky top-0 hidden lg:flex">
-      <aside class="desktop:w-72 fixed laptop:w-56" aria-label="Sidebar">
-        <div
-          class="overflow-y-auto flex flex-col items-center static py-4 px-3 bg-transparent rounded dark:bg-gray-800"
-        >
-          <div class="flex flex-col">
-            <h1 class="text-PINK">YOUR PAGES</h1>
-            <div class="flex flex-row items-center mt-5">
-              <img
-                class="w-10 h-10 rounded-full mr-4"
-                src="./img/music.jpg"
-                alt="music"
-              />
-              <h2 class="text-PINK">Music</h2>
-            </div>
-            <div class="flex flex-row items-center mt-5">
-              <img
-                class="w-10 h-10 rounded-full mr-4"
-                src="./img/sport.jpg"
-                alt="sport"
-              />
-              <h2 class="text-PINK">Sports</h2>
-            </div>
-            <div class="flex flex-row items-center mt-5">
-              <img
-                class="w-10 h-10 rounded-full mr-4"
-                src="./img/movies.jpg"
-                alt="movie"
-              />
-              <h2 class="text-PINK">Movies</h2>
-            </div>
-            <div class="">
-              <h1 class="text-PINK mt-10">CONTACTS</h1>
-              <h5 class="text-gray-700 mt-2">Active</h5>
-              <div class="flex flex-row items-center mt-5">
-                <img
-                  class="w-10 h-10 rounded-full mr-4"
-                  src="./img/lucas-gouvea-aoEwuEH7YAs-unsplash.jpg"
-                  alt="mike"
-                />
-                <h2 class="text-PINK">Mike Snow</h2>
-              </div>
-              <div class="flex flex-row items-center mt-5">
-                <img
-                  class="w-10 h-10 rounded-full mr-4"
-                  src="./img/reza-biazar-eSjmZW97cH8-unsplash (1).jpg"
-                  alt="lucas"
-                />
-                <h2 class="text-PINK">Lucas Seian</h2>
-              </div>
-              <div class="flex flex-row items-center mt-5">
-                <img
-                  class="w-10 h-10 rounded-full mr-4"
-                  src="./img/erik-lucatero-d2MSDujJl2g-unsplash.jpg"
-                  alt="John"
-                />
-                <h2 class="text-PINK">John Johnson</h2>
-              </div>
-              <div class="flex flex-row items-center mt-5">
-                <img
-                  class="w-10 h-10 rounded-full mr-4"
-                  src="./img/girl-1.jpg"
-                  alt="Jenny"
-                />
-                <h2 class="text-PINK">Jenny Jesnon</h2>
-              </div>
-              <div class="flex flex-row items-center mt-5">
-                <img
-                  class="w-10 h-10 rounded-full mr-4"
-                  src="./img/girl-2.jpg"
-                  alt="susan"
-                />
-                <h2 class="text-PINK">Susan Brei</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
-<script type="module" src="./js/main.js"></script>

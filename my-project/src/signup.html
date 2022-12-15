@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/cae421ab12.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-SWIMMER-BLACK">
+    <header class="index-container flex flex-col items-center h-full pt-10">
+      <img src="./img/SWIMMER LOGO1.svg" alt="" srcset="" />
+      <h1 class="text-white font-Josefin">SWIMMER</h1>
+      <h2 class="text-SWIMMER-PINK font-Indie pt-8 text-xs">
+        “Don`t just surf on the internet, go for a swim”
+      </h2>
+    </header>
+    <main class="h-screen">
+      <div class="index-container flex flex-col items-center h-full pt-10">
+        <div class="login-container p-4 text-center">
+          <a href="index.html">
+            <h3
+              id="go-to-login"
+              class="register font-Josefin underline text-white text-center"
+            >
+              Already have an account?
+            </h3></a
+          >
+          <h4 class="register font-Indie text-white text-center">or</h4>
+
+          <form
+            action=""
+            id="signup-form"
+            class="signup-form text-center max-w-xs flex flex-col justify-center m-auto"
+          >
+            <div class="first-name-1 relative">
+              <input
+                id="first-name"
+                class="w-72 h-10 rounded-lg bg-[url('../img/swimmer-texture-2.svg')] my-2 p-2 bg-input-color font-Indie text-white"
+                placeholder="First name"
+                type="text"
+              />
+              <img
+                class="profile-1 absolute w-8 h-4 top-5 right-2"
+                src="./img/swimmer-profile-1.svg"
+                alt=""
+              />
+            </div>
+
+            <span
+              id="first-name-error"
+              class="text-sm text-red-100 font-Indie font-extralight hidden"
+            >
+              Please enter your first name</span
+            >
+            <div class="email-1 relative">
+              <input
+                id="email"
+                class="w-72 h-10 rounded-lg bg-[url('../img/swimmer-texture-2.svg')] my-2 p-2 bg-input-color font-Indie text-white"
+                placeholder="Email"
+                type="text"
+              />
+              <img
+                class="profile-1 absolute w-8 h-4 top-5 right-2"
+                src="./img/swimmer-profile-1.svg"
+                alt=""
+              />
+            </div>
+
+            <span
+              id="email-not-valid"
+              class="text-sm text-red-100 font-Indie font-extralight hidden"
+            >
+              Email is not valid must be a valid stud.noroff.no or noroff.no
+              email address
+            </span>
+            <span
+              id="email-error"
+              class="text-sm text-red-100 font-Indie font-extralight hidden"
+            >
+              Email is required
+            </span>
+            <div class="pass-1 relative">
+              <input
+                id="password"
+                class="password-1 w-72 h-10 rounded-lg bg-[url('../img/swimmer-texture-2.svg')] my-2 p-2 bg-input-color font-Indie text-white"
+                placeholder="Password"
+                type="password"
+              />
+              <i
+                class="fa fa-eye-slash the-eye absolute top-5 right-3 cursor-pointer"
+              ></i>
+            </div>
+            <span
+              id="password-error"
+              class="text-sm text-red-100 font-Indie font-extralight hidden"
+            >
+              Password must be over 6 characters
+            </span>
+            <div class="pass-2 relative">
+              <input
+                id="confirm-password"
+                class="password-2 w-72 h-10 rounded-lg bg-[url('../img/swimmer-texture-2.svg')] my-2 p-2 bg-input-color font-Indie text-white"
+                placeholder="Confirm password"
+                type="password"
+              />
+              <i
+                class="fa fa-eye-slash the-eye2 absolute top-5 right-3 cursor-pointer"
+              ></i>
+            </div>
+            <span
+              id="confirm-password-matching"
+              class="text-sm text-red-100 font-Indie font-extralight hidden"
+            >
+              Passwords doesn't match
+            </span>
+            <span
+              id="confirm-password-error"
+              class="text-sm text-red-100 font-Indie font-extralight hidden"
+            >
+              Password must be over 6 characters
+            </span>
+            <a href="./homepage.html"
+              ><button
+                class="bg-SWIMMER-BROWN hover:bg-white hover:text-SWIMMER-PINK text-white font-Josefin w-1/2 m-auto mt-10 py-2 px-4 rounded-full font-thin"
+              >
+                LOGIN
+              </button></a
+            >
+          </form>
+        </div>
+
+        <a href="homepage.html">
+          <button
+            class="bg-transparent hover:bg-white hover:text-SWIMMER-PINK text-white font-Josefin py-2 px-4 rounded-full mt-4 border border-white"
+          >
+            GO FOR A SWIM
+          </button></a
+        >
+      </div>
+    </main>
+  </body>
+</html>
+<script type="module" src="./js/main.js"></script>
+<script type="module" src="./js/signup.js"></script>
