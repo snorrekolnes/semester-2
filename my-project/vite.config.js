@@ -8,6 +8,7 @@ export default {
 
   build: {
 
+
     rollupOptions: {
 
       input: {
@@ -16,7 +17,14 @@ export default {
 
         profile: resolve(__dirname, 'src/profile.html'),
 
-        login: resolve(__dirname, 'src/login.html'),
+        signup: resolve(__dirname, 'src/signup.html'),
+
+        specific: resolve(__dirname, 'src/specific.html'),
+        create: resolve(__dirname, 'src/create.html'),
+        edit: resolve(__dirname, 'src/edit-image.html'),
+        homepage: resolve(__dirname, 'src/homepage.html'),
+
+
 
       },
 
